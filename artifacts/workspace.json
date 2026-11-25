@@ -1,0 +1,17 @@
+{
+  "root": "/home/dev/feedback/uid38844",
+  "B": "/home/dev/feedback/uid38844",
+  "sha": "3cb41e8ebef905524957f8b7d2eb3b6487f94386",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "jedisct1",
+    "repo": "libsodium",
+    "sha": "3cb41e8ebef905524957f8b7d2eb3b6487f94386"
+  },
+  "fork": {
+    "owner": "Rrr119",
+    "repo": "libsodium",
+    "cloneUrl": "https://github.com/Rrr119/libsodium.git"
+  },
+  "at": "2026-11-25T21:35:32.945Z"
+}

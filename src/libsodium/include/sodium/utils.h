@@ -31,6 +31,7 @@ void sodium_stackzero(const size_t len);
  * are equal, in constant time.
  * It returns 0 if the keys are equal, and -1 if they differ.
  * This function is not designed for lexicographical comparisons.
+ * The running time depends on len, but not on the contents of the buffers.
  */
 SODIUM_EXPORT
 int sodium_memcmp(const void *const b1_, const void *const b2_, size_t len)

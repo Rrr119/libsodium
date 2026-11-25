@@ -29,6 +29,7 @@ EXTRA_DIST = \
 	codecs.exp \
 	codecs2.exp \
 	codecs3.exp \
+	consttime.exp \
 	core_ed25519.exp \
 	core_ed25519_h2c.exp \
 	core_ristretto255.exp \
@@ -136,6 +137,7 @@ DISTCLEANFILES = \
 	codecs.res \
 	codecs2.res \
 	codecs3.res \
+	consttime.res \
 	core_ed25519.res \
 	core_ed25519_h2c.res \
 	core_ristretto255.res \
@@ -254,6 +256,7 @@ TESTS_TARGETS = \
 	codecs \
 	codecs2 \
 	codecs3 \
+	consttime \
 	core1 \
 	core2 \
 	core3 \
@@ -404,6 +407,9 @@ codecs2_LDADD             = $(TESTS_LDADD)
 
 codecs3_SOURCE            = cmptest.h codecs3.c
 codecs3_LDADD             = $(TESTS_LDADD)
+
+consttime_SOURCE          = cmptest.h consttime.c
+consttime_LDADD           = $(TESTS_LDADD)
 
 core_ed25519_SOURCE       = cmptest.h core_ed25519.c
 core_ed25519_LDADD        = $(TESTS_LDADD)

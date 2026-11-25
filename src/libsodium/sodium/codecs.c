@@ -562,7 +562,7 @@ sodium_bin2ip(char *ip, size_t ip_maxlen, const unsigned char bin[16])
     if (ip_maxlen <= 2U) {
         return NULL;
     }
-    if (memcmp(bin, ipv4_mapped_prefix, 12U) == 0) {
+    if (sodium_memcmp(bin, ipv4_mapped_prefix, 12U) == 0) {
         for (i = 0; i < 4; i++) {
             if (i != 0) {
                 *p++ = '.';

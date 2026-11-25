@@ -20,3 +20,7 @@ pkgconfig_DATA = @PACKAGE_NAME@.pc
 
 DISTCLEANFILES = $(pkgconfig_DATA)
 
+.PHONY: consttime-check
+consttime-check:
+	LIBSODIUM_BUILD="$(abs_builddir)" $(srcdir)/test/consttime/run.sh
+

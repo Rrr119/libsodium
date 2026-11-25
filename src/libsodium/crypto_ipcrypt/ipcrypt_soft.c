@@ -280,7 +280,7 @@ is_ipv4_mapped(const uint8_t ip16[16])
 {
     static const uint8_t ipv4_mapped_prefix[12] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0xff, 0xff };
 
-    return memcmp(ip16, ipv4_mapped_prefix, 12) == 0;
+    return sodium_memcmp(ip16, ipv4_mapped_prefix, 12) == 0;
 }
 
 static uint8_t
